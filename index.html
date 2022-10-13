@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+    <title>Decodificador de Mensagem</title>
+</head>
+<body>
+    <header>
+        <div class="codigo">
+    <div>
+        <h1 id="titulo">Codificador e decodificador de mensagem</h1>
+        <p id="subtitulo"> Preencha no campo abaixo a mensagem que deseja codificar ou decodificar, selecione o método de codificação e em seguida clique no botão correspondente</p>
+        <br>
+    </div>
+</header>
+<main>
+    <form>
+        <fieldset class="codificacao">
+            <div>
+                <label><b>Mensagem</b></label><br>
+                <textarea row="6" style="width:26em" id="codificar" name="codificar"></textarea>
+            </div>
+
+            <div>
+                <label>
+                    <input type="radio" nome="codecod" value="base64" checked>Base 64
+                </label>
+
+                <label>
+                    <input type="radio" nome="codecod" value="cesar">Cifra de Cesar
+                </label>
+                <br>
+                <br>
+                <button class="botao" type="submit" id="codificar" onclick="myFunction()">Codificar</button>
+                <button class="botao" type="submit" id="codificar" onclick="myfunction()">Decodificar</button>
+                <br>
+                <br>
+                <textarea row="6" style="width:26em" id="decodificar" name="decodificar"></textarea>
+            </div>
+        </fieldset>
+
+    </form>
+</div>
+</main>
+
+    
+</body>
+</html>
