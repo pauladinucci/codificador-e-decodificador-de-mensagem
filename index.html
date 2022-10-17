@@ -1,0 +1,60 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+    <title>decodificador de mensagem</title>
+</head>
+<body>
+
+
+
+<div class="main">  
+    <h1>Codificador e decodificador de mensagem</h1>
+    <p>Insira o texto que deseja codificar ou decodificar, selecione a forma de código, se deseja codificar ou decodificar e clique no botão abaixo</p>
+        <form>
+            <br>
+            <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem"></textarea>
+  
+            <select name="codigo" id="codigo">
+                <option disabled selected>Selecione o código</option>
+                <option value="base64">Base 64</option>
+                <option value="cesar">Cifra de César</option>
+            </select>
+  
+            <fieldset style="border:none;" class="keyDiv">
+                <label for="chave">Incremento 1-25</label>
+                <input type="number" id="chave" value="1" max="26" />
+            </fieldset>
+  
+            <fieldset style="border:none;" class="codeRadio">
+              <div class="divR">
+                  <input type="radio" name="code" class="radio" id="code" />
+                  <label for="codificar">Codificar</label>
+              </div>
+              <div class="divR">
+                  <input type="radio" name="code" class="radio" id="decode" />
+                  <label for="decodificar">Decodificar</label>
+              </div>
+            </fieldset>
+  
+            <fieldset style="border:none;">
+                  <textarea name="resultado" id="resultado" readonly></textarea>
+            </fieldset>
+  
+              <button id="btnResult">
+                  <p>codificar ou decodificar</p>
+              </button>
+        </form>
+  </div>
+  
+  
+  </footer>
+</body>
+<script src="javascript/main.js"></script>
+</html>
