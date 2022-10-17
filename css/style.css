@@ -1,0 +1,123 @@
+html {
+    background: white;
+    height: 100%;
+    overflow: hidden;
+}
+#Matrix{
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+}
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    
+    background-size: auto 120%;
+    background-attachment: fixed, scroll;
+    font-family: 'sans-serif';
+  }
+  .main{
+    width: 45%;
+    background-color:darkgoldenrod;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    color: white;
+    border: solid white;
+    border-radius: 5%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    opacity: 89%;
+  }
+  h1 {
+    color: white;
+    margin: 10px;
+    text-align: center;
+    font-family: 'sans-serif';
+  }
+  fieldset {
+    border: none;
+  }
+  select {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 15px;
+  }
+  textarea {
+    width: 100%;
+    height: 70px;
+    margin: 10px ;
+    padding: 12px;
+    color: black;
+    font-weight: bolder;
+    background-color: whitesmoke;
+    font-size: 15px;
+    border: brown solid 2px;
+    
+  }
+  textarea:selection{
+    background-color: black;
+    color: black;
+  }
+  .keyDiv {
+    background-color: darkgoldenrod;
+    float: right;
+    width: 55%;
+    display: none;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  #codigo{
+    background-color: white;
+    color: darkgoldenrod;
+    border: black solid 2px;
+    width: 44%;
+    text-align: center;
+    border-radius: 15px;
+  }
+  .codeRadio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px 0;
+  }
+
+  #btnResult {
+    font-size: 17px;
+    cursor: pointer;
+    background-color: white;
+    color: darkgoldenrod;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: white solid 2px;
+    border-radius: 10%;
+  }
+ 
+  @media only screen and (min-width: 280px) and (max-width: 960px){
+    h1 {
+      font-size: 20px;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+ 
+    .codeRadio {
+      display: block;
+    }
+    .main{
+      width: 90%;
+    }
+    .keyDiv{
+      width: 100%;
+    }
+    #codigo{
+      width: 100%;
+    }
+  
+  }
